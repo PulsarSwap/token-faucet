@@ -1,6 +1,7 @@
 import "./App.css";
 import FaucetToken from "./constants/FaucetToken.json";
 import "bootstrap/dist/css/bootstrap.min.css";
+// eslint-disable-next-line no-unused-vars
 import { Container, Row, Col } from "react-bootstrap";
 import Faucet from "./components/Faucet";
 

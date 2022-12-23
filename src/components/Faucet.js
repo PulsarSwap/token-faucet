@@ -44,34 +44,34 @@ const Faucet = ({ props, tokenAddress }) => {
   }
   return (
     <div>
-      <Card style={{ background: "rgba(227, 104, 222, 0.71)" }}>
-        <Card.Body>
-          <Card.Title>Goerli ETH Faucet</Card.Title>
-          <br></br>
-          <div className="d-grid gap-2">
-            <Button href="https://faucetlink.to/goerli">Faucet Link</Button>
-          </div>
-          <br></br>
-          <br></br>
-          <Card.Title>Goerli ERC20-Token Faucet</Card.Title>
-          <br></br>
-          <div className="d-grid gap-2">
-            <Button onClick={faucet(TSUSD_ADDRESS)}>Mint 10,000 TSUSD</Button>{" "}
-            <Button onClick={getBalance(TSUSD_ADDRESS)} variant="warning">
-              Check TSUSD Balance
-            </Button>
-            {showBalance ? <Message balance={balance} /> : null}
-          </div>
-          <br></br>
-          <div className="d-grid gap-2">
-            <Button onClick={faucet(TSPUL_ADDRESS)}>Mint 10,000 TSPUL</Button>{" "}
-            <Button onClick={getBalance(TSPUL_ADDRESS)} variant="warning">
-              Check TSPUL Balance
-            </Button>
-            {showBalance ? <Message balance={balance} /> : null}
-          </div>
-        </Card.Body>
-      </Card>
+      {/* <Card style={{ background: "rgba(227, 104, 222, 0.71)" }}> */}
+      <Card.Body>
+        <Card.Title>Goerli ETH Faucet</Card.Title>
+        <br></br>
+        <div className="d-grid gap-2">
+          <Button href="https://faucetlink.to/goerli">Faucet Link</Button>
+        </div>
+        <br></br>
+        <br></br>
+        <Card.Title>Goerli ERC20-Token Faucet</Card.Title>
+        <br></br>
+        <div className="d-grid gap-2">
+          <Button onClick={faucet(TSUSD_ADDRESS)}>Mint 10,000 TSUSD</Button>{" "}
+          <Button onClick={getBalance(TSUSD_ADDRESS)} variant="warning">
+            Check TSUSD Balance
+          </Button>
+          {showBalance ? <Message balance={balance} /> : null}
+        </div>
+        <br></br>
+        <div className="d-grid gap-2">
+          <Button onClick={faucet(TSPUL_ADDRESS)}>Mint 10,000 TSPUL</Button>{" "}
+          <Button onClick={getBalance(TSPUL_ADDRESS)} variant="warning">
+            Check TSPUL Balance
+          </Button>
+          {showBalance ? <Message balance={balance} /> : null}
+        </div>
+      </Card.Body>
+      {/* </Card> */}
     </div>
   );
 };

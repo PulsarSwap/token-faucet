@@ -52,6 +52,8 @@ const Faucet = (props) => {
     <div>
       {/* <Card style={{ background: "rgba(227, 104, 222, 0.71)" }}> */}
       <Card.Body>
+        <Card.Title>Please install Metamask and choose Goerli test network</Card.Title>
+        <br></br>
         <Card.Title>Goerli ETH Faucet</Card.Title>
         {/* <br></br> */}
         <div className="d-grid gap-2">

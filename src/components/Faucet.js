@@ -6,7 +6,7 @@ import { TSPUL_ADDRESS, TSUSD_ADDRESS } from "../constants";
 //import Message from "./Message";
 
 const Faucet = (props) => {
-  // const [balance, setBalance] = useState();
+  // const [balance, setBalance] = useState(); Commented Out
   // const [showBalance, setShowBalance] = useState(false);
 
   // const [balanceTSUSD, setBalanceTSUSD] = useState();

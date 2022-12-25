@@ -38,6 +38,7 @@ const Faucet = (props) => {
       //   method: "eth_requestAccounts",
       // });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
+      await provider.send('eth_requestAccounts', []); // <- this promps user to connect metamask
       const signer = provider.getSigner();
       const contract = new ethers.Contract(
         tokenAddress,

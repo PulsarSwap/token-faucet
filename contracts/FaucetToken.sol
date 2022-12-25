@@ -24,7 +24,7 @@ contract FaucetToken is ERC20 {
 
     //allow users to call the mintToken function to mint tokens
     function mintToken() public {
-        //perform a few check to make sure function can execute
+        //perform a few check to make sure function can execute 
         // require(
         //     block.timestamp > lockTime[msg.sender],
         //     "lock time has not expired. Please try again later"

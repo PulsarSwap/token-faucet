@@ -37,7 +37,7 @@ const Faucet = (props) => {
   async function faucet(tokenAddress) {
     if (typeof window.ethereum !== "undefined") {
       // const account = await window.ethereum.request({
-      //   method: "eth_requestAccounts",
+      //   method: "eth_requestAccounts", 
       // });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       //await provider.send("eth_requestAccounts", []); // <- this prompt user to connect metamask

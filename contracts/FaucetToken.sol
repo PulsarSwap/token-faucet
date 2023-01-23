@@ -11,12 +11,12 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
 //create a sample token that inherits OpenZepplins ERC-20 contract
 contract FaucetToken is ERC20 {
-    uint256 unitToken = 10000 * (10**18);
+    uint256 public constant unitToken = 10000 * (10**18);
 
     //when deploying the token give it a name and symbol
     //specify the amount of tokens minted for the owner
     constructor(string memory name, string memory symbol) ERC20(name, symbol) {
-        _mint(msg.sender, 1000000 * (10**18));
+        _mint(msg.sender, 1000000000 * (10**18));
     }
 
     //when you request Tokens, address and blocktime+1 day is saved in Time Lock

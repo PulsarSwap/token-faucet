@@ -15,6 +15,9 @@ function App() {
       <Container>
         <Row className="justify-content-md-center">
           <main className="main">
+            <br></br>
+            <br></br>
+            <br></br>
             <h1 className="title">
               {/* Welcome to <a href="https://thirdweb.com/">thirdweb</a>!  */}
               Welcome to Pulsar Faucet!

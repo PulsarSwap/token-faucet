@@ -8,7 +8,7 @@ import {
   TSUSD_ADDRESS,
   TSUSD_ADDRESS_MANTLE,
 } from "../constants";
-import { ConnectWallet } from "@thirdweb-dev/react";
+//import { ConnectWallet } from "@thirdweb-dev/react";
 //import Message from "./Message";
 
 const Faucet = (props) => {

@@ -3,6 +3,7 @@ import { ethers } from "ethers";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { TSPUL_ADDRESS, TSUSD_ADDRESS } from "../constants";
+import { ConnectWallet } from "@thirdweb-dev/react";
 //import Message from "./Message";
 
 const Faucet = (props) => {
@@ -20,6 +21,7 @@ const Faucet = (props) => {
   //       method: "eth_requestAccounts",
   //     });
   //     const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //     await provider.send('eth_requestAccounts', []); // <- this prompt user to connect metamask
   //     const contract = new ethers.Contract(
   //       tokenAddress,
   //       props.tokenContract,
@@ -38,7 +40,7 @@ const Faucet = (props) => {
       //   method: "eth_requestAccounts", 
       // });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
-      await provider.send('eth_requestAccounts', []); // <- this promps user to connect metamask
+      //await provider.send("eth_requestAccounts", []); // <- this prompt user to connect metamask
       const signer = provider.getSigner();
       const contract = new ethers.Contract(
         tokenAddress,
@@ -53,17 +55,22 @@ const Faucet = (props) => {
     <div>
       {/* <Card style={{ background: "rgba(227, 104, 222, 0.71)" }}> */}
       <Card.Body>
-        <Card.Title>Please install Metamask and choose Goerli test network</Card.Title>
+        <Card.Title>
+          Please connect Metamask and choose Goerli test network
+        </Card.Title>
+        <br></br>
+        <ConnectWallet accentColor="#f213a4" colorMode="light" />
+        <br></br>
         <br></br>
         <Card.Title>Goerli ETH Faucet</Card.Title>
-        {/* <br></br> */}
+        <br></br>
         <div className="d-grid gap-2">
           <Button href="https://faucetlink.to/goerli">Faucet Link</Button>
         </div>
         <br></br>
         <br></br>
         <Card.Title>Goerli ERC20-Token Faucet</Card.Title>
-        {/* <br></br> */}
+        <br></br>
         <div className="d-grid gap-2">
           <Card.Text variant="warning">
             TSUSD: 0xD9ddAd120e166CcB831FD3E021b821476ef71621

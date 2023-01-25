@@ -8,7 +8,7 @@ import {
   TSUSD_ADDRESS,
   TSUSD_ADDRESS_MANTLE,
 } from "../constants";
-//import { ConnectWallet } from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 //import Message from "./Message";
 
 const Faucet = (props) => {
@@ -60,10 +60,10 @@ const Faucet = (props) => {
     <div>
       {/* <Card style={{ background: "rgba(227, 104, 222, 0.71)" }}> */}
       <Card.Body>
-        {/* <br></br>
+        <br></br>
         <ConnectWallet accentColor="#f213a4" colorMode="light" />
         <br></br>
-        <br></br> */}
+        <br></br>
         <h3>Goerli ETH Faucet</h3>
         <br></br>
         <div className="d-grid gap-2">

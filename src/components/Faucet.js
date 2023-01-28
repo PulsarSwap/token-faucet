@@ -42,7 +42,7 @@ const Faucet = (props) => {
   async function faucet(tokenAddress) {
     if (typeof window.ethereum !== "undefined") {
       // const account = await window.ethereum.request({
-      //   method: "eth_requestAccounts", 
+      //   method: "eth_requestAccounts",
       // });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       //await provider.send("eth_requestAccounts", []); // <- this prompt user to connect metamask
@@ -102,6 +102,13 @@ const Faucet = (props) => {
           </Button>
           <br></br>
           {showBalance ? <Message balance={balance} /> : null} */}
+        </div>
+        <br></br>
+        <br></br>
+        <h3>Mantle Goerli BIT Faucet</h3>
+        <br></br>
+        <div className="d-grid gap-2">
+          <Button href="https://faucet.testnet.mantle.xyz">Faucet Link</Button>
         </div>
         <br></br>
         <br></br>

@@ -105,7 +105,7 @@ const Faucet = (props) => {
         </div>
         <br></br>
         <br></br>
-        <h3>Mantle Goerli BIT Faucet</h3>
+        <h3>Mantle Goerli MNT Faucet</h3>
         <br></br>
         <div className="d-grid gap-2">
           <Button href="https://faucet.testnet.mantle.xyz">Faucet Link</Button>
